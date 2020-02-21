@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+
+<body>
+
+<div>
+    <section>
+        <form action="" method="post">
+
+            <label for="fname">Nome:</label>
+            <input id="fname" type="text" name="name"  required/>
+
+            <label for="fpassword">Senha:</label>
+            <input id="fpassword" type="password" name="password"  max="12" required/>
+
+            <label for="fphoto">Foto:</label>
+            <input type="file" name="photo" id="fphoto" accept="image/*"/>
+
+            <label for="fbirthday">Semana de Nascimento:</label>
+            <input id="fbirthday" type="week" name="birthday"  min="1900-W01" max="2002-W52"/>
+
+            <label for="fkids">Quantidades de filhos:</label>
+            <input id="fkids" type="number" name="kids"  min="0" required/>
+
+            <label for="fphone">Telefone Residencial:</label>
+            <input id="fphone" type="number" name="phone" placeholder="(00)0000-00-00"/>
+
+            <label>Deseja Receber Notícias:</label>
+            <label for="newsYes">Sim</label>
+            <input id="newsYes" type="radio" name="news" value="yes" checked/>
+            <label for="newsNo">Não</label>
+            <input id="newsNo" type="radio" name="news" value="no"/>
+
+            <label>Como ficou sabendo do nosso site:</label>
+            <label for="fsocial-midia">Redes Sociais</label>
+            <input id="fsocial-midia" type="checkbox" name="social-media"/>
+            <label for="frecommendation">Indicação</label>
+            <input id="frecommendation" type="checkbox" name="recommendation"/>
+            <label for="fnews">Jornal</label>
+            <input id="fnews" type="checkbox" name="news"/>
+
+            <label for="fmail">Email</label>
+            <input id="fmail" type="email" name="mail"
+                   multiple placeholder="me@email.com, you@email.com, ..."/>
+
+            <input type="submit" name="button">
+            <input type="reset" name="button">
+            <a href="home.html" class="redirect">Página Inicial</a>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>
