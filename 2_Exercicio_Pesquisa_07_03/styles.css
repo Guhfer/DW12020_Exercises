@@ -1,0 +1,86 @@
+
+.form {
+    margin: auto;
+    max-width: 600px;
+    background-color: rgba(191, 191, 191, 0.58);
+}
+
+.form .form-container {
+    padding: 20px;
+    display: block;
+}
+
+.tributes {
+    text-align: left;
+    width: 100%;
+}
+
+.radio {
+    display: inline;
+}
+
+label {
+    text-align: right;
+    width: 100%;
+    display: block; 
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+input {
+    width: 75%;
+    height: 35px;
+}
+
+input[type=radio]{
+    width: auto;
+    height: auto;
+}
+
+.button-container {
+    overflow: auto;
+}
+
+.button-container button {
+    float: right;
+    height: 45px;
+    width: 100px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1em;;
+    background-color: #3aff26;
+    border: none;
+}
+
+@media only screen and (orientation: portrait) {
+    .form {
+        margin: 0;
+    }
+
+    label {
+        text-align: left;
+        margin: 0px;
+    }
+
+    input {
+        display: block; 
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .radio {
+        display: block;
+        margin: 5px;
+    }
+
+    .radio input[type=radio] {
+        display: inline;
+    }
+
+    .button-container button {
+        float: none;
+        width: 100%;
+    }
+    
+}

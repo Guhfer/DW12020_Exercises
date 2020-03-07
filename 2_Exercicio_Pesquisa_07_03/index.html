@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+<form onSubmit="submit" class="form">
+    <div class="form-container">
+        <div>
+            <label for="fname">
+                Nome:
+                <input id="fname" type="text" name="name" pattern="[a-zA-Z]{2,}((\s|_)[a-zA-Z]{2,})+" required/>
+            </label>
+        </div>
+        <div>
+            <label for="fpassword">
+                Senha:
+                <input id="fpassword" type="password" name="password"
+                       pattern="^(?=(.*[a-zA-Z].*){2})(?=.*\d.*)(?=.*\W.*)[a-zA-Z0-9\S]{6,}$" required/>
+            </label>
+        </div>
+        <div>
+            <label for="fphoto">
+                Foto:
+                <input id="fphoto" type="file" name="photo" accept="image/*"/>
+            </label>
+        </div>
+        <div>
+            <label for="fsite">
+                Site:
+                <input id="fsite" type="text" name="site" pattern="(http://|https://)(\w+)"/>
+            </label>
+        </div>
+        <div>
+            <label class="tributes">Informação tributária:</label>
+            <label for="ftaxpayer" class="radio">
+                <input id="ftaxpayer" type="radio" name="ftaxpayer" checked/>
+                Contribuinte
+            </label>
+            <label for="fntaxpayer" class="radio">
+                <input id="fntaxpayer" type="radio" name="ftaxpayer"/>
+                Não contribuinte
+            </label>
+        </div>
+        <div class="button-container">
+            <button>Enviar</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
