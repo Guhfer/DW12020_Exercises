@@ -1,0 +1,28 @@
+section {
+  /*border: 1px solid #ccc;*/
+  width: 50%;
+  padding: 20px;
+}
+
+label, input {
+  display: block;
+  margin-top: 10px;  
+}
+
+input {
+  width: 100%;	
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type=submit] {
+  background-color: #ccc;
+  border: none;
+  border-radius: 10px;  
+  font-weight: bold;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;	
+}
