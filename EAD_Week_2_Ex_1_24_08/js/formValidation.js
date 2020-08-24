@@ -1,24 +1,28 @@
 "use strict";
 
 window.onload = () => {
-    let form = document.forms["form"];
     let section = document.getElementById("erros");
-    form.noValidate = true;
 
-    form.addEventListener("submit", (event) => {
-        let validate;
-        validateData(form);
-        validate = applyValidation(form, section);
-        if (!validate)
-            event.preventDefault();
-    });
+    let forms = document.forms;
+    forms.noValidate = true;
 
-    function validateData(form1) {
+    for(let i = 0; i < forms.length; i++) {
+        let form = forms[i];
+        form.addEventListener("submit", (event) => {
+            let validate;
+            validateData(form);
+            validate = applyValidation(form, section);
+            if (!validate)
+                event.preventDefault();
+        });
+    }
+
+    function validateData(form) {
         let name, lastName, age;
 
-        name = form1.elements["nome"]; //Acessa pela posição, nome ou id do elemento do form
-        lastName = form1.elements["sobrenome"];
-        age = form1.elements["idade"];
+        name = form.elements["nome"]; //Acessa pela posição, nome ou id do elemento do form
+        lastName = form.elements["sobrenome"];
+        age = form.elements["idade"];
 
         if (name.value.length < 3 || lastName.value.length < 3) {
             name.setCustomValidity("Nome ou sobrenome com menos de 3 caracteres");
