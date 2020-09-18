@@ -1,22 +1,22 @@
 section {
-	border: 1px solid #000;
-	width: 50%;
-	padding: 20px;
-	margin: 20px auto;
+    border: 1px solid #000;
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
 }
 
 section .tabela {
-	border: 1px solid #000;
-	border-collapse: collapse;
-	width: 100%;
-	height: 300px;
-	margin: 10px auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+    height: 300px;
+    margin: 10px auto;
 }
 
 td, th {
-	border: 1px solid #000;
+    border: 1px solid #000;
 }
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }

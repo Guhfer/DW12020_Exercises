@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <title>Cadastro - Exercicio 1</title>
+    <meta charset="UTF-8"/>
+</head>
+
+
+<title>Form</title>
+<body>
+<h2>Formulário</h2>
+<form method="post" action="student">
+    <label for="labelNome">Nome:</label>
+    <input type="text" name="nome" id="labelNome" placeholder="Digite seu nome" required="required"/> <br/>
+
+    <br/>
+    <label for="textAreaEmail">E-mail:</label>
+    <textarea id="textAreaEmail" name="emails" rows="3" cols="40" placeholder="Digite um ou mais e-mails em cada linha"
+              required="required"></textArea> <br/>
+
+    <br/>
+    <label>Cursos de extensão:</label> <br/>
+    <label>
+        <input type="checkbox" name="cursos" value="JAXB"/>
+    </label>JAXB <br/>
+    <label>
+        <input type="checkbox" name="cursos" value="Animações em CSS 3"/>
+    </label>Animacoes em CSS 3 <br/>
+    <label>
+        <input type="checkbox" name="cursos" value="Design Patterns"/>
+    </label>Design Patterns <br/>
+    <p></p>
+
+    <input type="submit" name="submit" value="Enviar"/>
+    <input type="reset" name="resetar" value="Apagar"/>
+</form>
+</body>
+</html>

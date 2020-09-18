@@ -22,7 +22,7 @@
 label {
     text-align: right;
     width: 100%;
-    display: block; 
+    display: block;
     font-size: 1.2em;
     margin-bottom: 20px;
     color: black;
@@ -33,7 +33,7 @@ input {
     height: 35px;
 }
 
-input[type=radio]{
+input[type=radio] {
     width: auto;
     height: auto;
 }
@@ -64,7 +64,7 @@ input[type=radio]{
     }
 
     input {
-        display: block; 
+        display: block;
         margin: 5px 0;
         width: 100%;
     }
@@ -82,5 +82,5 @@ input[type=radio]{
         float: none;
         width: 100%;
     }
-    
+
 }

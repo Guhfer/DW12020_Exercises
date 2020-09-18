@@ -1,75 +1,87 @@
 ﻿body {
-  font-family: arial, sans-serif;
+    font-family: arial, sans-serif;
 }
 
 .modal {
-  padding-top: 100px;
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 100px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #131212;
-  color: white;
+    padding: 2px 16px;
+    background-color: #131212;
+    color: white;
 }
 
 .modal-body {
-  padding: 2px 16px;
+    padding: 2px 16px;
 }
 
 .modal-footer {
-  padding: 2px 16px;
-  background-color: #0c0c0c;
-  color: white;
+    padding: 2px 16px;
+    background-color: #0c0c0c;
+    color: white;
 }
 
 .close {
-  color: #888888;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  border: none;
+    color: #888888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
 }
 
-.close:hover { 
-  color: #f1eded;
-  cursor: pointer;
+.close:hover {
+    color: #f1eded;
+    cursor: pointer;
 }
 
 .modal.showAnimation {
-  display: flex;
+    display: flex;
 }
 
 @-webkit-keyframes animate {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 @keyframes animate {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 .showAnimation .modal-content {
-  animation-name: animate;
-  animation-duration: 0.5s
+    animation-name: animate;
+    animation-duration: 0.5s
 }

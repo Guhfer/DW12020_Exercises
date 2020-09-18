@@ -6,7 +6,7 @@ window.onload = () => {
     let forms = document.forms;
     forms.noValidate = true;
 
-    for(let i = 0; i < forms.length; i++) {
+    for (let i = 0; i < forms.length; i++) {
         let form = forms[i];
         form.addEventListener("submit", (event) => {
             let validate;
@@ -51,11 +51,11 @@ window.onload = () => {
 
         for (let i = 0; i < elements.length; i++) {
             if (!elements[i].validity.valid) {
-                errors.push("Nome do campo: "+ elements[i].name+ " Mensagem de erro: " + elements[i].validationMessage)
+                errors.push("Nome do campo: " + elements[i].name + " Mensagem de erro: " + elements[i].validationMessage)
             }
         }
 
-        if(errors.length > 0) {
+        if (errors.length > 0) {
             valid = false;
         }
 

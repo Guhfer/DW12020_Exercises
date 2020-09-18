@@ -13,11 +13,11 @@ function managerTables(form) {
     let lines = form["linhas"].value;
     let columns = form["colunas"].value;
 
-    if(lines < 1 || lines === !NaN || columns < 1 || columns === !NaN) {
+    if (lines < 1 || lines === !NaN || columns < 1 || columns === !NaN) {
         alert("Números inválidos.")
-    }else{
+    } else {
         let table = document.getElementById("tabela");
-        if(table != null) {
+        if (table != null) {
             removeTable(table);
         }
         createTable(lines, columns);
@@ -32,12 +32,12 @@ function createTable(lines, columns) {
     createAttribute("id", tabble, "tabela");
     createAttribute("class", tabble, "tabela");
 
-    for(let nLines = 0; nLines < lines; nLines++){
+    for (let nLines = 0; nLines < lines; nLines++) {
         const tr = createElement("tr", tabble);
-        for(let nColumns = 0; nColumns < columns; nColumns++){
-            if(nLines === 0) {
+        for (let nColumns = 0; nColumns < columns; nColumns++) {
+            if (nLines === 0) {
                 createElement("th", tr);
-            }else{
+            } else {
                 createElement("td", tr);
             }
         }
